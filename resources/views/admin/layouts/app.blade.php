@@ -12,7 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('admin/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/other.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/simple-line-icons.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/jquery.dataTables.css') }}">
     
     @yield('css')
 
@@ -29,26 +31,20 @@
         @include('admin.layouts.header')
         <section>
             <section class="hbox stretch">
-                
                 {{-- aside --}}
                 @if(! Auth::guest())
                     @include('admin.layouts.aside')
                 @endif
-
                 <section id="content">
-                    <section class="hbox stretch">
-                        <section class="vbox">
-                            
+                    <section class="vbox stretch" id="bjax-el">
                             @yield('content')
-                            
-                        </section>
                     </section>
                 </section>
-                
             </section>
         </section>
     </section>
     <!-- Scripts -->
+    <script src="{{ asset('vendor/base.js') }}"></script>
     <script src="{{ asset('admin/js/app.js') }}"></script>
     @yield('js')
 </body>

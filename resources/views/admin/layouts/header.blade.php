@@ -6,7 +6,7 @@
         </a>
         <a href="#" class="navbar-brand text-lt">
             <i class="icon-graduation"></i>
-            <span class="hidden-nav-xs m-l-sm">My Apps</span>
+            <span class="hidden-nav-xs m-l-sm">CBT Mandiri</span>
         </a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
             <i class="icon-settings"></i>

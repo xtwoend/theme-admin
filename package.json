@@ -17,6 +17,11 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    
+    "datatables.net": "^1.10.15",
+    "datatables.net-dt": "^1.10.15",
+    "font-awesome": "^4.7.0",
+    "jquery-countdown": "^2.2.0",
+    "jquery-mousewheel": "^3.1.13",
+    "sweetalert": "^1.1.3"
   }
 }

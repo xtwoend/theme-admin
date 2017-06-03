@@ -8,6 +8,7 @@ window._ = require('lodash');
  */
 
 window.$ = window.jQuery = require('jquery');
+window.dt = require( 'datatables.net' );
 
 require('bootstrap-less');
 
@@ -34,7 +35,8 @@ window.axios.defaults.headers.common = {
 
 $.ajaxSetup({
     headers: {
-        'X-CSRF-TOKEN': window.Laravel.csrfToken
+        'X-CSRF-TOKEN': window.Laravel.csrfToken,
+        'X-Requested-With': 'XMLHttpRequest'
     }
 });
 

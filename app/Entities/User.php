@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'nis', 'nisn', 'name', 'gender', 'tgl_lahir', 'password', 'password_text', 'kelas_id', 'foto', 'nomor', 'ruang', 'sesi'
     ];
 
     /**
@@ -24,6 +24,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'password_text'
     ];
+
+    /**
+     * [kelas description]
+     * @return [type] [description]
+     */
+    public function kelas()
+    {
+        return $this->belongsTo(\App\Entities\Kelas::class, 'kelas_id');
+    }
 }

@@ -12,7 +12,7 @@ class DashboardController extends Controller
      */
     public function __construct()
     {
-        
+        config(['site.menu' => 'dashboard']);
     }
 
     /**

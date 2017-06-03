@@ -11,6 +11,7 @@ body {
   -webkit-box-sizing: none;
   background: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   box-sizing: none;
   height: 10cm;
   margin: 0;
@@ -167,10 +168,9 @@ thead {
 tfoot {
   display: table-footer-group;
 }
-@page {
-  -webkit-print-color-adjust: exact;
-  size: A4;
-  margin: 0;
+nip {
+  display: inline-block;
+  width: 130px;
 }
 @media print {
   html,
@@ -180,12 +180,10 @@ tfoot {
   }
   .page {
     margin: 0;
-    border: initial;
-    border-radius: initial;
-    width: initial;
-    min-height: initial;
-    box-shadow: initial;
-    background: initial;
-    page-break-after: always;
   }
+}
+@page {
+  -webkit-print-color-adjust: exact;
+  size: A4;
+  margin: 0;
 }

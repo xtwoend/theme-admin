@@ -239,7 +239,7 @@ input[type="search"] {
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 10px;
   margin-bottom: 0;
   vertical-align: middle;
   font-weight: normal;
@@ -513,7 +513,8 @@ input[type="checkbox"] {
   .checkbox-inline {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+    // padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+    padding: 7px 12px;
   }
   // Account for padding we're adding to ensure the alignment and of help text
   // and other content below items
@@ -531,9 +532,19 @@ input[type="checkbox"] {
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: @screen-sm-min) {
     .control-label {
-      text-align: right;
+      text-align: left;
       margin-bottom: 0;
       padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      // font-weight: 500;
+      span {
+        float: right;
+      }
+    }
+    select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 6px 12px;
     }
   }
 

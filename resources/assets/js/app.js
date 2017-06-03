@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('jquery-countdown');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -14,6 +15,7 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('pertanyaan', require('./components/Pertanyaan.vue'));
 
 const app = new Vue({
     el: '#app'
